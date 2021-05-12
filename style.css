@@ -1,0 +1,575 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    height:100%;
+    width:100%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin : 0px;
+    padding : 0px;
+    background-color: rgb(17, 17, 41);
+    color:white;
+}
+.container{
+    height:100%;
+    width:100%;
+}
+.banner{
+    margin-top:-70px;
+    height:720px;
+    background-size: cover;
+    padding-top:20px;
+}
+.img-header{
+    height:720px;
+    width:100%;
+}
+.header-banner{
+    height:720px;
+    width:100%;
+    background-color: black;
+    opacity:0.3;
+}
+.header{
+    padding-top:10px;
+    height:40px;
+    width:100%;
+    margin-top: 70px;
+    background: transparent;
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    z-index:999999;
+}
+.header .optional{
+    margin-left:50%;
+}
+.header .optional a{
+    text-decoration: none;
+    color:azure;
+}
+.header .optional a:focus{
+    transition:1s;
+}
+.header .optional span{
+    margin:0px 15px 0px 15px;
+}
+.header .optional span:hover{
+    cursor:pointer;
+}
+.header .icon{
+    visibility: hidden;
+}
+.header h1{
+    color : white;
+    margin-left: 20px;
+    margin-top:-5px;
+}
+.banner-info{
+    margin-top:-500px;
+    width:100%;
+    position:relative;
+    animation: fromTop;
+    animation-delay:1s;
+    animation-duration: 2s;
+}
+.banner-info h2{
+    font-variant: small-caps;
+    font-size:40px;
+    margin:0px;
+    text-align:center;
+}
+.banner-info p{
+    font-size:15px;
+    margin:0px;
+    text-align:center;
+}
+.banner button{
+    padding:10px 30px;
+    font-variant: small-caps;
+    font-size: 20px;
+    color:antiquewhite;
+    background-color: rgb(38, 233, 12);
+    font-weight: 400;
+    border:none;
+    position:relative;
+    display:block;
+    margin:143px auto;
+    border-radius:5px;
+}
+.banner button:hover, .modal .form button:hover, .sub-modal button:hover{
+    cursor:pointer;
+    background-color: rgb(28, 185, 8);
+}
+.banner button:focus, .modal .form button:focus, .sub-modal button:focus{
+    outline: none;
+}
+.speaker{
+    margin-top:-20px;
+    margin-bottom:100px;
+    padding:0px;
+    height:100%;
+    width:100%;
+    text-align:center;
+}
+.speaker .caption{
+    width:60%;
+    margin:0px auto;
+    text-align:center;
+}
+.speaker h1{
+    text-align:center;
+    background-color: rgb(9, 9, 27);
+    height:60px;
+    line-height: 60px;
+}
+.speaker p{
+    text-align:center;
+}
+.p-animate{
+    animation-name: forParagraph;
+    animation-duration: 2s;
+    animation-delay: 0.7s;
+}
+.speaker .speaker-group{
+    display:flex;
+    flex-direction:rows;
+    flex-wrap : wrap;
+    justify-content: space-around;
+    margin-top:50px;
+}
+.speaker .speaker-list{
+    height:300px;
+    width:250px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 5px gray;
+    border-radius:5px;
+    color:black;
+}
+.speaker .speaker-list .foto-speaker{
+    height:180px;
+    width:180px;
+    margin: 5px auto;
+    border-radius:50%;
+}
+.sg{
+    background-image: url('speaker/sandhika.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mm{
+    background-image: url('speaker/mustadi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ag{
+    background-image: url('speaker/angga.png');
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: -30px -16px;
+}
+.rf{
+    background-image: url('speaker/riza.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.speaker .speaker-list h4{
+    text-align: center;
+}
+.speaker .speaker-list p{
+    font-size: 13px;
+    margin:3px;
+    text-align: center;
+}
+.agenda h1{
+    text-align: center;
+}
+.agendas{
+    display: flex;
+    flex-direction: row;
+    margin-bottom:110px;
+}
+.agendas .another{
+    width:400px;
+    margin-left:100px;
+}
+.agendas .another a{
+    text-decoration: none;
+    appearance: button;
+    background-color: beige;
+    color:rgb(76, 141, 172);
+    font-weight: bolder;
+    height: 40px;
+    width: 130px;
+    border:none;
+    border-radius:5px;
+    line-height:40px;
+    text-align: center;
+}
+.agendas .another a:hover{
+    background-color: rgb(76, 141, 172);
+    color:beige;
+    cursor:pointer;
+}
+.agenda .speak-theme{
+    font-style: italic;
+    font-size:13px;
+}
+.detailed-agenda .theAgenda{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+}
+.detailed-agenda .theAgenda .date{
+    height:35px;
+    width:150px;
+    background-color: azure;
+    color:black;
+    text-align: center;
+    border-radius:5px;
+    font-size:14px;
+    font-weight:bolder;
+
+}
+.detailed-agenda .theAgenda .note{
+    margin-left:50px;
+    margin-top:-20px;
+}
+.detailed-agenda .theAgenda .note p{
+    margin-top:-10px;
+}
+.vertical-line{
+    background-color:azure;
+    height:60px;
+    width:3px;
+    margin:-5px 0px 15px 70px;
+    border-radius:2px;
+}
+.support h1{
+    text-align:center;
+}
+.support .support-list{
+    width:68%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin:0px auto;
+}
+.support .support-list img{
+    height:70px;
+    width:260px;
+    background-color: azure;
+    margin: 10px;
+}
+.footer{
+    border-top:2px solid azure;
+    margin-top:200px;
+    padding-top:100px;
+}
+.footer img{
+    height:20px;
+    width:20px;
+}
+.footer .media{
+    float:left;
+    margin: 0px 0px 10px 10px;
+}
+.footer span{
+    float:right;
+    margin: 0px 10px 10px 0px;
+}
+.modal{
+    height:400px;
+    width:400px;
+    background-color: white;
+    position:absolute;
+    z-index:9999999;
+    margin:250px 35%;
+    border-radius:10px;
+    color:black;
+}
+.exit-modal{
+    float:right;
+    text-align:center;
+    line-height:16px;
+    height:16px;
+    width:16px;
+    border:2px solid rgb(3, 10, 32);
+    border-radius:50%;
+    margin:5px 5px 0px 0px;
+    clear:both;
+}
+.exit-modal:hover{
+    cursor:pointer;
+}
+.modal .form{
+    width:70%;
+    margin:40px auto;
+    display:flex;
+    flex-direction: column;
+}
+.modal .form label{
+    margin-bottom:10px;
+}
+.modal .form input{
+    margin-bottom: 10px;
+    height:30px;
+    width:90%;
+}
+.modal .form span{
+    color:red;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom:10px;
+    visibility:hidden;
+}
+.modal .form p{
+    font-size: smaller;
+    margin-bottom:60px;
+}
+.modal .form button{
+    height:30px;
+    width:130px;
+    margin:0px auto;
+    border:none;
+    background-color: rgb(38, 233, 12);
+    color:white;
+    font-weight: bolder;
+}
+.sub-modal{
+    height:200px;
+    width:300px;
+    background-color: white;
+    position:absolute;
+    z-index:9999999;
+    margin:300px 38%;
+    border-radius:10px;
+    color:black;
+    text-align: center;
+}
+.sub-modal button{
+    height:40px;
+    width:110px;
+    margin-top:15px;
+    color: white;
+    font-weight: bolder;
+    border:none;
+    background-color:rgb(38, 233, 12);
+}
+/* menyembunyikan modal window */
+.hidden{
+    display:none;
+}
+/* membuat overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+/* mengatur animasi */
+
+@keyframes fromTop{
+    0%{
+        margin-top:-800px;
+    }
+    75%{
+        margin-top:-450px;
+    }
+    100%{
+        margin-top: -500px;
+    }
+}
+@keyframes forParagraph{
+    0%{
+        margin-left: -200px;
+    }
+    100%{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:669px){
+    .container{
+        display:flex;
+        flex-direction:column;
+    }
+    .header{
+        margin-top:-5px;
+        height:30px;
+    }
+    .header h1{
+        font-size: 15px;
+        line-height:30px;
+    }
+    .header .optional{
+        font-size: 7px;
+        display:none;
+    }
+    .header .icon{
+        color:white;
+        visibility: visible;
+        margin-left:60%;
+    }
+    .new-nav{
+        margin-top:30px;
+        width:100%;
+        background-color: rgb(7, 7, 29);
+        text-align:center;
+        position:fixed;
+        z-index:99999999;
+    }
+    .new-nav a{
+        display:block;
+        text-decoration: none;
+        color:white;
+        border-bottom:0.01px solid white;
+        padding-top:1%;
+        padding-bottom:1%;
+    }
+    .banner{
+        margin:-10px;
+    }
+    .banner .header-banner{
+        visibility:hidden;
+    }
+    .banner h2{
+        font-size:20px;
+    }
+    .banner p{
+        font-size: 10px;
+    }
+    .banner button{
+        margin-top:30px;
+    }
+    .speaker{
+        height:100%;
+    }
+    .speaker h1{
+        font-size:15px;
+        margin-top:-210px;
+    }
+    .speaker .caption p{
+        font-size:12px;
+    }
+    .speaker .speaker-group{
+        flex-direction: column;
+    }
+    .speaker .speaker-group .speaker-list{
+        height:200px;
+        width:200px;
+        margin:5px auto;
+    }
+    .speaker .speaker-group .speaker-list .foto-speaker{
+        height:100px;
+        width:100px;
+    }
+    .speaker .speaker-group .speaker-list h4, .speaker .speaker-group .speaker-list p{
+        font-size:10px;
+    }
+    .agenda{
+        width:95%;
+        margin-top:0px;
+    }
+    .agenda .agendas{
+        width:100%;
+        flex-direction: column;
+        font-size: smaller;
+    }
+    .agenda .agendas .another{
+        font-size: smaller;
+        margin-left:0px;
+        width:70%;
+        margin:10px auto;
+    }
+    .agenda .agendas .detailed-agenda{
+        margin-top:10px;
+    }
+    .agenda .agendas .detailed-agenda .date{
+        height:30px;
+        width:90px;
+        font-size:10px;
+        margin-bottom:20px;
+        margin-left:10px;
+    }
+    .agenda .agendas .detailed-agenda .note{
+        margin-left:30px;
+        margin-bottom: 20px;
+        width:70%;
+    }
+    .agenda .agendas .detailed-agenda .note h4{
+        font-size:13px;
+    }
+    .agenda .agendas .detailed-agenda .note p{
+        font-size:10px;
+    }
+    .agenda .agendas .detailed-agenda .vertical-line{
+        display: none;
+    }
+    .support .support-list{
+        width:80%;
+    }
+    .support .support-list img{
+        height:30px;
+        width:120px;
+        background-color: azure;
+        margin: 5px;
+    }
+    .modal{
+        height:70%;
+        width:70%;
+        margin-top:10%;
+        margin-left:20%;
+    }
+    .sub-modal{
+        margin:30px;
+    }
+    .overlay{
+        width:100%;
+    }
+}
+@media screen and (min-width:670px) and (max-width:1024px){
+    .header .optional{
+        margin-left:20%;
+    }
+    .speaker .speaker-list{
+        height:300px;
+        width:220px;
+        margin:10px;
+    }
+    .agenda{
+        width:95%;
+    }
+    .agenda .agendas{
+        width:95%;
+    }
+    .agenda .another{
+        margin-left:10px;
+        width:60%;
+    }
+    .agenda .date{
+        margin-left:0px;
+    }
+    .agenda .note h4{
+        font-size:12px;
+    }
+    .agenda .note{
+        width:80%;
+    }
+    .support{
+        width:100%;
+    }
+    .support .support-list{
+        width:90%;
+        margin:0px auto;
+    }
+    .support .support-list img{
+        height: 80px;
+        width:200px
+    }
+}

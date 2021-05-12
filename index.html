@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devs week</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <a id="top"></a>
+    <a id="top2"></a>
+    <div class="container">
+        <div class="header">
+            <h1>Devs Week</h1>
+            <div class="optional">
+                <a href="#top"><span>Home</span></a>
+                <a href="#speaker"><span>Speakers</span></a>
+                <a href="#agenda"><span>Agenda</span></a>
+                <a href="#support"><span>Support</span></a>
+            </div>
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="new-nav hidden">
+            <a href="#top2"><span>Home</span></a>
+            <a href="#speaker2"><span>Speakers</span></a>
+            <a href="#agenda2"><span>Agenda</span></a>
+            <a href="#support2"><span>Support</span></a>
+        </div>
+        <div class="modal hidden">
+            <div class="exit-modal">&times;</div>
+            <div class="form">
+                <label for="Nama">Nama</label>
+                <input type="text" id="nama">
+                <span id="miss-nama">form nama tidak boleh kosong</span>
+                <label for="E-mail">Email</label>
+                <input type="email" id="E-mail">
+                <span id="miss-email"> form email tidak boleh kosong</span>
+                <p>
+                    Note : Setelah menekan tombol order maka tatacara pembayaran, rekening tujuan, dan info lebih lanjut akan kami kirimkan via email
+                </p>
+                <button class="order">Order</button>
+            </div>
+        </div>
+        <div class="sub-modal hidden">
+            <h3>Terimakasih telah memesan!!</h3>
+            <p>Silahkan cek email anda</p>
+            <button class="exit-sub-modal">OK</button>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="banner">
+            <div class="header-banner">
+                <img src="images/header1.jpg" alt="header" class="img-header">
+            </div>
+            <div class="banner-info">
+                <h2>webinar akhir pekan</h2>
+                <h2>membahas seputar teknologi terkini</h2>
+                <p>webinar yang akan menghadirkan para IT expert Indonesia</p>
+                <p>tetap produktif di masa pandemi dengan belajar seputar teknologi baru</p>
+                <button class="ticket"><b>get the ticket</b></button>
+                <a id="speaker"></a>
+                <a id="speaker2"></a>
+            </div>
+        </div>
+        <div class="speaker">
+            <h1>PARA PEMBICARA</h1>
+            <div class="caption">
+                <div id="p-with-animate">
+                    <p>
+                        Webinar ini bertujuan untuk meningkatkan kemampuan dan kemauan masyarakat baik yang berlatar belakang IT ataupun non-IT untuk terus berinovasi meskipun di masa pandemi.
+                    </p>
+                    <p>
+                        Hal ini dilakukan untuk menjawab tantangan zaman guna mempersiapkan masyarakat Indonesia menghadapi era society 5.0
+                    </p>
+                </div>
+            </div>
+            <div class="speaker-group">
+                <div class="speaker-list">
+                    <div class="foto-speaker sg"></div>
+                    <div class="detail-speaker">
+                        <h4>Sandhika Galih</h4>
+                        <p>Dosen teknik informatika UNPAS</p>
+                        <p>Content Creator web programming</p>
+                    </div>
+                </div>
+                <div class="speaker-list">
+                    <div class="foto-speaker mm"></div>
+                    <div class="detail-speaker">
+                        <h4>Muhammad Mustadi</h4>
+                        <p>Fullstack Software Engineer</p>
+                        <p>Co-Founder commonlabs.id</p>
+                    </div>
+                </div>
+                <div class="speaker-list">
+                    <div class="foto-speaker ag"></div>
+                    <div class="detail-speaker">
+                        <h4>Angga Dwi Arifandi</h4>
+                        <p>Mobile Engineer at Rock.so</p>
+                        <p>Google developers expert in flutter</p>
+                    </div>
+                </div>
+                <div class="speaker-list">
+                    <div class="foto-speaker rf"></div>
+                    <div class="detail-speaker">
+                        <h4>Riza Fahmi</h4>
+                        <p>Co-Founder at Hacktiv-8</p>
+                    </div>
+                </div>
+            </div>
+            <a id="agenda"></a>
+            <a id="agenda2"></a>
+        </div>
+        <div class="agenda">
+            <h1>Agenda</h1>
+            <div class="agendas">
+                <div class="another">
+                    <h3>Ingin tahu event kami selanjutnya?</h3>
+                    <p>Download aplikasi kami sekarang dan dapatkan info seputar webinar yang akan datang</p>
+                    <a href="https://play.google.com/store">Download App</a>
+                </div>
+                <div class="detailed-agenda">
+                    <div class="theAgenda">
+                        <div class="date">Sabtu,22 Mei 2021 09:00 WIB</div>
+                        <div class="note">
+                            <h4>Sandhika Galih</h4>
+                            <p class="speak-theme">
+                                "Step by step menjadi fullstack developer"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="theAgenda">
+                        <div class="date">Sabtu,22 Mei 2021 13:00 WIB</div>
+                        <div class="note">
+                            <h4>Angga Dwi Arifandi</h4>
+                            <p class="speak-theme">
+                                "flutter for everything"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="theAgenda">
+                        <div class="date">Minggu,23 Mei 2021 09:00 WIB</div>
+                        <div class="note">
+                            <h4>Muhammad Mustadi</h4>
+                            <p class="speak-theme">
+                                "Awali karir dengan berkontribusi pada program open source"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <div class="theAgenda">
+                        <div class="date">Minggu,23 Mei 2021 13:00 WIB</div>
+                        <div class="note">
+                            <h4>Riza Fahmi</h4>
+                            <p class="speak-theme">
+                                "Belajar coding cepat,tepat,dan efektif"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="support">
+            <a id="support"></a>
+            <a id="support2"></a>
+            <h1>Support</h1>
+            <div class="support-list">
+                <img src="support/dicoding-logo-full.png" alt="dicoding">
+                <img src="support/codepolitan.png" alt="codepolitan">
+                <img src="support/bitlabs.png" alt="bitlabs">
+                <img src="support/niomic.png" alt="niomic">
+                <img src="support/hacktive8.png" alt="hacktive8">
+                <img src="support/petani-kode.jpg" alt="petani kode">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="media">
+                <a href="https://twitter.com/"><img src="media/twitter.png" alt="twitter"></a>
+                <a href="https://www.instagram.com/"><img src="media/instagram.png" alt="instagram"></a>
+                <a href="https://web.facebook.com"><img src="media/facebook.png" alt="facebook"></a>
+            </div>
+            <span>Devs Week &copy; 2021</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
